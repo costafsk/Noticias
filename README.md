@@ -28,5 +28,19 @@ Projeto cobaia com a finalidade de aprendizado.
   },
 ```
 
+## DDL
+```sql
+    CREATE TABLE `news` (
+      `id` int(11) NOT NULL AUTO_INCREMENT,
+      `title` varchar(100) NOT NULL,
+      `content` text NOT NULL,
+      `createdAt` timestamp NOT NULL DEFAULT current_timestamp(),
+      `resumo` varchar(100) DEFAULT NULL,
+      `author` varchar(30) DEFAULT NULL,
+      `data` date DEFAULT NULL,
+      PRIMARY KEY (`id`)
+    ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8
+```
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
