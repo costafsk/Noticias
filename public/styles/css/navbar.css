@@ -1,0 +1,11 @@
+.navbar {
+  background-color: #6d56bb;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2); }
+  .navbar .navbar-brand {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+    font-size: 2em; }
+  .navbar .navbar-brand:hover {
+    color: white; }

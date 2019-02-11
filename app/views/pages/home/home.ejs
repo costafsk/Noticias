@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<% include  ../../components/head.ejs %>
+		<title>Weeknd</title>
+	</head>
+	<body>
+        <% include ../../components/header.ejs %>
+	    <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="news">
+						<div>
+							<span class="author"><%= news[0].author %></span>
+						</div>
+		    			<a href="news?id=<%= news[0].id %>" class="title"><%= news[0].title %></a>
+		    			<br />
+		    			<p class="summary"><%= news[0].content %></p>
+						<span class="data"><%= news[0].data %></span>
+		    		</div>
+		    	</div>
+                
+	    		<div class="col-md-4">
+                    <div class="news">
+						<div>
+							<span class="author"><%= news[1].author %></span>
+						</div>
+		    			<a href="news?id=<%= news[1].id %>" class="noticia_titulo"><%= news[1].title %></a>
+                        
+		    			<br />
+		    			<p class="summary"><%= news[1].content %></p>
+						<span class="data"><%= news[1].data %></span>
+		    		</div>
+		    	</div>
+	    	</div>
+            
+	    	<div class="row">
+				<% for(let i=2; i<5; i++) { %>
+					<div class="col-md-4">
+						<div class="news">
+							<div>
+								<span class="author"><%= news[i].author%></span>
+							</div>
+							<a href="news?id=<%= news[i].id %>" class="sub-title"><%= news[i].title %></a>
+							<br />
+							<p class="summary"><%= news[i].content %></p>
+							<span class="data"><%= news[i].data %></span>
+						</div>
+					</div>
+				<% } %>
+	    	</div>
+            
+	    	<div class="row ver_mais">
+                <button type="button" class="btn btn-default"><a href="feed">Ver todas as notícias</a></button>
+	    	</div>
+            
+	    </div>
+        
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        
+	</body>
+    </html>
