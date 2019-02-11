@@ -6,11 +6,12 @@
 	</head>
 	<body>
         <% include ../../components/header.ejs %>
-	    <div class="container">
+	    <div class="container-fluid bg-dark">
             <div class="row">
                 <div class="col-md-8">
                     <div class="news">
-						<div>
+						<div class="d-flex justify-content-between">
+							&nbsp;
 							<span class="author"><%= news[0].author %></span>
 						</div>
 		    			<a href="news?id=<%= news[0].id %>" class="title"><%= news[0].title %></a>
@@ -22,11 +23,11 @@
                 
 	    		<div class="col-md-4">
                     <div class="news">
-						<div>
+						<div class="d-flex justify-content-between">
+							&nbsp;
 							<span class="author"><%= news[1].author %></span>
 						</div>
-		    			<a href="news?id=<%= news[1].id %>" class="noticia_titulo"><%= news[1].title %></a>
-                        
+		    			<a href="news?id=<%= news[1].id %>" class="sub-title"><%= news[1].title %></a>
 		    			<br />
 		    			<p class="summary"><%= news[1].content %></p>
 						<span class="data"><%= news[1].data %></span>

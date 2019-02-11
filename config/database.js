@@ -6,7 +6,7 @@ const connection = () => {
             host:'localhost',
             user:'root',
             database:'portal',
-            password:'aham aham'
+            password:'1234'
         })
     );
 }

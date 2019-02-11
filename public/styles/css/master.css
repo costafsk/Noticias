@@ -1,5 +1,4 @@
 .navbar {
-  background-color: #6d56bb;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2); }
   .navbar .navbar-brand {
     color: white;
@@ -10,19 +9,22 @@
   .navbar .navbar-brand:hover {
     color: white; }
 
+.sub-navbar {
+  background-color: #58697a; }
+
 .news {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #ededed;
   padding: 35px;
   margin-top: 7%;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
-  border-radius: 8px; }
+  border: 1px solid #DC3545; }
   .news .author {
-    color: #6d56bb; }
+    color: grey; }
   .news .title, .news .sub-title {
     text-decoration: none;
-    color: #6d56bb;
+    color: #DC3545;
     font-weight: bold;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.1); }
   .news .title {
@@ -30,7 +32,4 @@
   .news .sub-title {
     font-size: 1.5em; }
   .news .summary {
-    color: #727272; }
-
-body {
-  background-color: #f2f2f2; }
+    color: #58697a; }
